@@ -1,0 +1,8 @@
+subscription_id    = "your-azure-subscription-id"
+project_name       = "aksproject"
+environment        = "prod"
+location           = "uksouth"
+kubernetes_version = "1.33"
+node_vm_size       = "Standard_D2pds_v6"
+min_node_count     = 1
+max_node_count     = 3

@@ -15,6 +15,7 @@ build/
 *.tfplan
 override.tf
 override.tf.json
+terraform.tfvars
 
 # Environment
 .env
