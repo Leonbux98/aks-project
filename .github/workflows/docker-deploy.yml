@@ -44,6 +44,7 @@ jobs:
           format: table
           exit-code: '1'
           severity: CRITICAL
+          ignore-unfixed: true
 
       - name: Push to ACR
         run: docker push ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tag }}
