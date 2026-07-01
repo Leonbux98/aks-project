@@ -31,9 +31,17 @@ jobs:
       - name: Login to ACR
         run: az acr login --name ${{ env.ACR_NAME }}
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Build Docker image
         run: |
-          docker build \
+          docker buildx build \
+            --platform linux/arm64 \
+            --load \
             -t ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tag }} \
             app/
 
