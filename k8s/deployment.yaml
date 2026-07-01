@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: acraksproject4805d2.azurecr.io/demo-app:ea50dd252bde01c78dbdd1ee48ea2946791a6bcb
+          image: acraksproject4805d2.azurecr.io/demo-app:ae6fbaf3c219df926097dbd939c280ec6b129ab6
           ports:
             - containerPort: 5000
           env:
