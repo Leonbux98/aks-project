@@ -39,6 +39,16 @@ flowchart TD
 
 ---
 
+## Screenshots
+
+**Grafana — `app_requests_total` scraped from both pods via ServiceMonitor**
+![Grafana metrics](docs/screenshots/grafana.png)
+
+**ArgoCD — `demo-app` Healthy & Synced, all 10 resources green**
+![ArgoCD GitOps](docs/screenshots/argocd.png)
+
+---
+
 ## Stack
 
 | Layer | Technology |
